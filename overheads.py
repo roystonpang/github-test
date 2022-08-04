@@ -21,3 +21,17 @@ def overhead_function(forex):
             expenses_list.append({"category": line[0], "overheads": line[1]})
     # header is removed
     expenses_list.pop(0)
+    
+    max_category = None
+    max_overheads = 0
+
+    for expense in expenses_list:
+        # condition to check if overheads figure in csv is greater than the stored figure
+        if int(expense["overheads"].replace(",","")) > max_overheads:
+            # largest overheads value will be stored in max_overheads
+            max_overheads = int(expense["overheads"].replace(",",""))
+            # corresponding category will be stored in max_category
+            max_category = expense["category"]
+    
+    # max_overheads value (usd) will be converted to sgd using real time forex rate
+    return max_category, max_overheads * forex
