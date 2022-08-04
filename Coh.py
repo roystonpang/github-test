@@ -2,6 +2,11 @@ from pathlib import Path
 import re, csv
 
 def coh_function(forex):
+  """
+    - function will determine the day where Cash-on-Hand is lower
+    than the previous day and its value difference (converted from USD to SGD)
+    - parameter forex is predetermined, no other parameter required
+    """
   # file path for cash on hand.csv is created
   home = Path.cwd()/'csv_reports'/'cash on hand.csv'
   
