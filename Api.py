@@ -8,7 +8,7 @@ def api_function():
     - no parameter required
     """
     
-    # please 
+    # please insert your personal api key to access alphavantage data
     api_key = ""
     url = f"https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=SGD&apikey={api_key}"
     
