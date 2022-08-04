@@ -39,3 +39,4 @@ def profitloss_function(forex):
 
     return day, difference
 print ("hello world")
+print ("hello world too")
