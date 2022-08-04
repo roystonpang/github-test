@@ -2,6 +2,12 @@ from pathlib import Path
 import re, csv
 
 def profitloss_function(forex):
+    """
+    - This function will determine the day where net profit is lower
+    than the previous day and its value difference (converted from USD to SGD)
+    - Parameter forex is predetermined, no other parameter required
+    """
+    #file path for profit & loss .csv is created 
     home = Path.cwd()/'csv_reports'/'profit & loss.csv'
     profit_loss_list = []
     with home.open(mode='r',encoding='UTF-8',newline='') as file:
