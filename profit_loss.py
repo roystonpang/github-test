@@ -38,3 +38,4 @@ def profitloss_function(forex):
         net_profit = float(amount["net profit"]) 
 
     return day, difference
+print ("hello world")
