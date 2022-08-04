@@ -4,11 +4,11 @@ import requests
 def api_function():
     """
     - function will determine real time 
-    currency from USD to SGD
+    currency exchange rate from USD to SGD
     - no parameter required
     """
     
-    # please insert your personal api key to access alphavantage data
+    # please 
     api_key = ""
     url = f"https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=SGD&apikey={api_key}"
     
