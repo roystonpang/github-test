@@ -14,7 +14,7 @@ def api_function():
     
     # use get method from requests on the api url
     response = requests.get(url)
-    # use json method from requests to get data
+    # use json method from requests to 
     forex = response.json()
     # extract conversion value from the key: "Realtime Currency Exchange Rate""5. Exchange Rate"
     return float(forex["Realtime Currency Exchange Rate"]["5. Exchange Rate"])   
